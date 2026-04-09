@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="36" fill="#ECFEFF"/>
+  <rect x="76" y="72" width="1048" height="576" rx="28" fill="#fff" stroke="#CFFAFE" stroke-width="3"/>
+  <rect x="118" y="120" width="236" height="484" rx="20" fill="#0F172A"/>
+  <rect x="396" y="120" width="468" height="232" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="396" y="376" width="468" height="228" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="888" y="120" width="194" height="484" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="148" y="176" fill="#fff" font-size="28" font-family="Arial, sans-serif">Category</text>
+  <text x="428" y="176" fill="#0F172A" font-size="32" font-family="Arial, sans-serif">Article Page</text>
+  <text x="920" y="176" fill="#0F172A" font-size="28" font-family="Arial, sans-serif">TOC</text>
+  <text x="426" y="224" fill="#475569" font-size="22" font-family="Arial, sans-serif">Hero / Metadata / Markdown / Media</text>
+  <text x="426" y="430" fill="#0F172A" font-size="32" font-family="Arial, sans-serif">Search / Featured / Recent</text>
+  <text x="426" y="478" fill="#475569" font-size="22" font-family="Arial, sans-serif">Cards, filters, bilingual shell, local metadata search</text>
+</svg>

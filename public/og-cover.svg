@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="32" fill="#0F172A"/>
+  <circle cx="144" cy="132" r="240" fill="#0F766E" fill-opacity=".18"/>
+  <circle cx="1036" cy="86" r="220" fill="#F59E0B" fill-opacity=".12"/>
+  <rect x="72" y="88" width="1056" height="454" rx="28" fill="#F8FAFC" fill-opacity=".06" stroke="#E2E8F0" stroke-opacity=".12"/>
+  <text x="96" y="220" fill="#F8FAFC" font-size="78" font-family="Arial, sans-serif" font-weight="700">StarSite</text>
+  <text x="96" y="308" fill="#CBD5E1" font-size="34" font-family="Arial, sans-serif">Personal frontend docs hub with Vue, Nuxt and engineering notes</text>
+  <text x="96" y="418" fill="#5EEAD4" font-size="28" font-family="Arial, sans-serif">Interview notes · Summaries · Profile · Search</text>
+</svg>

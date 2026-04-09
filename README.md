@@ -82,6 +82,7 @@ public/media/              图片和媒体资源
 更完整的项目说明见：
 
 - [PROJECT.md](./PROJECT.md)
+- [ARCHITECTURE.md](./ARCHITECTURE.md)
 
 Agent 协作规则见：
 

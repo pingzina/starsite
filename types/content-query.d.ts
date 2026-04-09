@@ -1,4 +1,4 @@
-declare function queryCollection(event: any, collection: string): {
+type QueryCollectionResult = {
   where(field: string, operator: string, value: unknown): ReturnType<typeof queryCollection>
   order(field: string, direction: 'ASC' | 'DESC'): ReturnType<typeof queryCollection>
   all(): Promise<Record<string, any>[]>
@@ -6,3 +6,6 @@ declare function queryCollection(event: any, collection: string): {
     first(): Promise<Record<string, any> | null>
   }
 }
+
+declare function queryCollection(event: any, collection: string): QueryCollectionResult
+declare function queryCollection(collection: string): QueryCollectionResult

@@ -1,4 +1,12 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import { existsSync, readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
+
+const articleIndexPath = resolve(process.cwd(), 'public/articles-index.json')
+const articleIndex = existsSync(articleIndexPath)
+  ? JSON.parse(readFileSync(articleIndexPath, 'utf8')) as Array<{ path: string }>
+  : []
+const articleRoutes = articleIndex.flatMap(article => [article.path, `/en${article.path}`])
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-03-01',
@@ -41,7 +49,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/rss.xml', '/sitemap.xml'],
+      routes: ['/rss.xml', '/sitemap.xml', ...articleRoutes],
     },
   },
   content: {

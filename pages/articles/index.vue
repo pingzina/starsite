@@ -6,10 +6,14 @@ const { t } = useI18n()
 
 const selectedCategory = computed(() => typeof route.query.category === 'string' ? route.query.category : '')
 
-const { data: articles } = await useFetch<ArticleMeta[]>('/api/articles', {
-  query: {
-    category: selectedCategory.value || undefined,
-  },
+const { data: articleIndex } = await useArticleIndex()
+
+const articles = computed<ArticleMeta[]>(() => {
+  const allArticles = articleIndex.value || []
+  if (!selectedCategory.value) {
+    return allArticles
+  }
+  return allArticles.filter(article => article.category === selectedCategory.value)
 })
 
 useSeoMeta({
@@ -27,10 +31,10 @@ useSeoMeta({
           <h1 class="text-3xl font-semibold text-slate-950">{{ t('section.allDocs') }}</h1>
           <p class="mt-2 text-sm text-slate-500">{{ selectedCategory || t('section.latestDocs') }}</p>
         </div>
-        <span class="rounded-full bg-white px-3 py-1 text-sm text-slate-500 shadow-sm">{{ articles?.length || 0 }}</span>
+        <span class="rounded-full bg-white px-3 py-1 text-sm text-slate-500 shadow-sm">{{ articles.length }}</span>
       </div>
       <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <DocCard v-for="article in articles || []" :key="article.path" :article="article" />
+        <DocCard v-for="article in articles" :key="article.path" :article="article" />
       </div>
     </section>
   </div>

@@ -4,8 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:index": "node scripts/build-content-index.mjs",
+    "predev": "npm run build:index",
     "dev": "nuxt dev",
+    "prebuild": "npm run build:index",
     "build": "nuxt build",
+    "pregenerate": "npm run build:index",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint .",

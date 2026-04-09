@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SearchEntry } from '~/types/content'
+import type { ArticleMeta, SearchEntry } from '~/types/content'
 
 const route = useRoute()
 const { t } = useI18n()
@@ -8,11 +8,40 @@ const localePath = useLocalePath()
 const keyword = ref(typeof route.query.query === 'string' ? route.query.query : '')
 const category = ref(typeof route.query.category === 'string' ? route.query.category : '')
 
-const { data, refresh } = await useFetch<SearchEntry[]>('/api/search', {
-  query: {
-    query: keyword.value || undefined,
-    category: category.value || undefined,
-  },
+const { data: articleIndex } = await useArticleIndex()
+
+const data = computed<SearchEntry[]>(() => {
+  const source = articleIndex.value || []
+  const searchText = keyword.value.trim().toLowerCase()
+
+  return source
+    .filter((article: ArticleMeta) => {
+      const categoryMatched = !category.value || article.category === category.value
+      if (!categoryMatched) {
+        return false
+      }
+
+      if (!searchText) {
+        return true
+      }
+
+      return [
+        article.title,
+        article.description,
+        article.category,
+        ...article.tags,
+      ]
+        .join(' ')
+        .toLowerCase()
+        .includes(searchText)
+    })
+    .map(article => ({
+      title: article.title,
+      path: article.path,
+      category: article.category,
+      tags: article.tags,
+      description: article.description,
+    }))
 })
 
 watch([keyword, category], async () => {
@@ -23,7 +52,6 @@ watch([keyword, category], async () => {
       category: category.value || undefined,
     },
   }), { replace: true })
-  await refresh()
 })
 
 useSeoMeta({
@@ -43,7 +71,7 @@ useSeoMeta({
 
     <div class="space-y-4">
       <article
-        v-for="item in data || []"
+        v-for="item in data"
         :key="item.path"
         class="panel p-5"
       >
@@ -59,7 +87,7 @@ useSeoMeta({
         <p class="mt-2 text-sm leading-7 text-slate-600">{{ item.description }}</p>
       </article>
 
-      <div v-if="!data?.length" class="panel p-10 text-center text-sm text-slate-500">
+      <div v-if="!data.length" class="panel p-10 text-center text-sm text-slate-500">
         {{ t('search.empty') }}
       </div>
     </div>

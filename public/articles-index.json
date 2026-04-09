@@ -1,0 +1,546 @@
+[
+  {
+    "path": "/articles/summary/frontend-system-design",
+    "slug": "summary/frontend-system-design",
+    "title": "前端系统设计：从单页面开发到可扩展文档平台",
+    "description": "结合真实项目视角，拆解一个前端站点从页面实现走向稳定架构时最应该先做的边界设计。",
+    "category": "工程总结",
+    "tags": [
+      "Architecture",
+      "System Design",
+      "Frontend"
+    ],
+    "cover": "/media/hero-architecture.svg",
+    "publishAt": "2026-04-09",
+    "updatedAt": "2026-04-09",
+    "readingTime": "12 min",
+    "featured": true,
+    "draft": false,
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/hero-architecture.svg",
+        "alt": "前端文档平台结构示意图",
+        "title": "当前站点结构示意图，可用于解释内容层、页面层和接口层的边界。"
+      }
+    ]
+  },
+  {
+    "path": "/articles/summary/performance-governance",
+    "slug": "summary/performance-governance",
+    "title": "前端性能治理：从一次优化到持续约束",
+    "description": "性能问题真正难的地方不在单点优化，而在于如何把指标、流程和责任长期纳入团队协作。",
+    "category": "浏览器/性能",
+    "tags": [
+      "Performance",
+      "Governance",
+      "Web Vitals"
+    ],
+    "cover": "",
+    "publishAt": "2026-04-08",
+    "updatedAt": "2026-04-09",
+    "readingTime": "12 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/search-experience-design",
+    "slug": "summary/search-experience-design",
+    "title": "文档站搜索体验设计：搜索框只是入口，不是结果",
+    "description": "搜索功能真正影响体验的不是输入框，而是索引策略、结果组织和“找不到时怎么办”的设计。",
+    "category": "工程总结",
+    "tags": [
+      "Search",
+      "UX",
+      "Information Architecture"
+    ],
+    "cover": "",
+    "publishAt": "2026-04-08",
+    "updatedAt": "2026-04-09",
+    "readingTime": "10 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/vue3-project-structure",
+    "slug": "summary/vue3-project-structure",
+    "title": "Vue 3 项目结构设计：如何避免页面越写越重",
+    "description": "从组合式函数、领域边界、UI 组件和接口适配角度，整理一套更适合长期维护的 Vue 3 项目结构。",
+    "category": "Vue 生态",
+    "tags": [
+      "Vue 3",
+      "Project Structure",
+      "Maintainability"
+    ],
+    "cover": "",
+    "publishAt": "2026-04-09",
+    "updatedAt": "2026-04-09",
+    "readingTime": "11 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/ai-dev-workflow",
+    "slug": "summary/ai-dev-workflow",
+    "title": "AI 辅助前端开发的工作流",
+    "description": "把 AI 当成执行与校验的放大器，而不是替代工程判断的捷径。",
+    "category": "AI/效率工具",
+    "tags": [
+      "AI",
+      "Workflow",
+      "Productivity"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-03",
+    "updatedAt": "2026-04-08",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/ci-quality-gates",
+    "slug": "summary/ci-quality-gates",
+    "title": "前端 CI 质量闸口怎么设",
+    "description": "让 lint、测试、构建、体积和预览校验真正成为交付标准，而不是装饰。",
+    "category": "构建工程化",
+    "tags": [
+      "CI",
+      "Quality",
+      "Delivery"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-05",
+    "updatedAt": "2026-04-08",
+    "readingTime": "7 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/nuxt-content-pipeline",
+    "slug": "summary/nuxt-content-pipeline",
+    "title": "用 Nuxt Content 搭内容站的经验",
+    "description": "内容建模、路由生成、静态部署和后续接口化改造如何提前留口。",
+    "category": "Vue 生态",
+    "tags": [
+      "Nuxt 3",
+      "Content",
+      "Static Site"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-08",
+    "updatedAt": "2026-04-08",
+    "readingTime": "7 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/performance-metrics",
+    "slug": "interview/performance-metrics",
+    "title": "前端性能指标面试题",
+    "description": "从 FCP、LCP、CLS、INP 说到性能优化，把指标和手段关联起来回答。",
+    "category": "面试题",
+    "tags": [
+      "Performance",
+      "Web Vitals",
+      "UX"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-13",
+    "updatedAt": "2026-04-07",
+    "readingTime": "7 min",
+    "featured": true,
+    "draft": false,
+    "media": [
+      {
+        "type": "audio",
+        "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
+        "title": "音频示例，用于验证文档页的播放器展示能力。"
+      }
+    ]
+  },
+  {
+    "path": "/articles/summary/api-adapter-pattern",
+    "slug": "summary/api-adapter-pattern",
+    "title": "为未来接口化预留 Adapter 层",
+    "description": "从静态内容站走向接口驱动站点时，为什么一定要尽早定义访问边界。",
+    "category": "构建工程化",
+    "tags": [
+      "Adapter",
+      "API",
+      "Abstraction"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-04",
+    "updatedAt": "2026-04-07",
+    "readingTime": "7 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/design-system-scaling",
+    "slug": "summary/design-system-scaling",
+    "title": "设计系统在业务增长中的扩展策略",
+    "description": "组件库不是一次性资产，真正难的是版本治理、设计约束和业务接入节奏。",
+    "category": "工程总结",
+    "tags": [
+      "Design System",
+      "Component Library",
+      "Governance"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-11",
+    "updatedAt": "2026-04-07",
+    "readingTime": "8 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/performance-budget",
+    "slug": "summary/performance-budget",
+    "title": "建立性能预算而不是事后救火",
+    "description": "把性能目标前置进研发流程，比上线后临时排查更有效。",
+    "category": "浏览器/性能",
+    "tags": [
+      "Performance",
+      "Budget",
+      "Monitoring"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-07",
+    "updatedAt": "2026-04-07",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/javascript-closure",
+    "slug": "interview/javascript-closure",
+    "title": "JavaScript 闭包高频问答",
+    "description": "从词法环境、内存保留到实际业务场景，快速解释什么是闭包以及为什么它会影响可维护性。",
+    "category": "面试题",
+    "tags": [
+      "JavaScript",
+      "Closure",
+      "Scope"
+    ],
+    "cover": "/media/hero-architecture.svg",
+    "publishAt": "2026-04-01",
+    "updatedAt": "2026-04-06",
+    "readingTime": "6 min",
+    "featured": true,
+    "draft": false,
+    "media": [
+      {
+        "type": "image",
+        "src": "/media/hero-architecture.svg",
+        "alt": "文档站结构示意图",
+        "title": "示例图片，验证 Markdown 文档与静态媒体的组合展示能力。"
+      }
+    ]
+  },
+  {
+    "path": "/articles/interview/typescript-generic",
+    "slug": "interview/typescript-generic",
+    "title": "TypeScript 泛型题如何回答",
+    "description": "用约束、复用和类型推导解释泛型，不把答案讲成背语法。",
+    "category": "面试题",
+    "tags": [
+      "TypeScript",
+      "Generic",
+      "Inference"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-15",
+    "updatedAt": "2026-04-06",
+    "readingTime": "6 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/frontend-audio-guide",
+    "slug": "summary/frontend-audio-guide",
+    "title": "在技术文档中组织音频与演示资源",
+    "description": "当知识内容不只是文字时，如何把音频、图片和演示链接纳入统一文档模型。",
+    "category": "AI/效率工具",
+    "tags": [
+      "Media",
+      "Audio",
+      "Documentation"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-02",
+    "updatedAt": "2026-04-06",
+    "readingTime": "5 min",
+    "featured": false,
+    "draft": false,
+    "media": [
+      {
+        "type": "audio",
+        "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
+        "title": "音频资源示例。"
+      },
+      {
+        "type": "demo",
+        "src": "https://nuxt.com/",
+        "title": "外部演示链接示例。"
+      }
+    ]
+  },
+  {
+    "path": "/articles/summary/image-loading-strategy",
+    "slug": "summary/image-loading-strategy",
+    "title": "图片加载策略的实战选择",
+    "description": "讨论封面图、首屏图、长内容图片在不同页面类型中的加载优先级。",
+    "category": "浏览器/性能",
+    "tags": [
+      "Image",
+      "Lazy Load",
+      "LCP"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-06",
+    "updatedAt": "2026-04-06",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/monorepo-practice",
+    "slug": "summary/monorepo-practice",
+    "title": "Monorepo 落地经验总结",
+    "description": "从包边界、发布策略、依赖治理到 CI 流程，整理 Monorepo 的收益和真实成本。",
+    "category": "工程总结",
+    "tags": [
+      "Monorepo",
+      "Tooling",
+      "CI"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-10",
+    "updatedAt": "2026-04-06",
+    "readingTime": "7 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/event-loop",
+    "slug": "interview/event-loop",
+    "title": "Event Loop 面试答法",
+    "description": "梳理宏任务、微任务和浏览器渲染时机，用一套稳定表达回答事件循环问题。",
+    "category": "面试题",
+    "tags": [
+      "JavaScript",
+      "Event Loop",
+      "Browser"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-28",
+    "updatedAt": "2026-04-05",
+    "readingTime": "7 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/vue-reactivity",
+    "slug": "interview/vue-reactivity",
+    "title": "Vue 3 响应式系统面试题",
+    "description": "用 Proxy、track、trigger 和 effect 的主线解释 Vue 3 响应式系统。",
+    "category": "面试题",
+    "tags": [
+      "Vue 3",
+      "Reactivity",
+      "Proxy"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-24",
+    "updatedAt": "2026-04-05",
+    "readingTime": "8 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/frontend-architecture",
+    "slug": "summary/frontend-architecture",
+    "title": "中后台前端架构的拆分方法",
+    "description": "如何在复杂业务里平衡页面开发效率、领域边界和可测试性。",
+    "category": "工程总结",
+    "tags": [
+      "Architecture",
+      "Dashboard",
+      "Maintainability"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-09",
+    "updatedAt": "2026-04-05",
+    "readingTime": "8 min",
+    "featured": true,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/summary/vue-composables-boundary",
+    "slug": "summary/vue-composables-boundary",
+    "title": "Vue Composable 的边界设计",
+    "description": "组合式函数不是越大越好，关键是职责清晰、依赖可替换、生命周期易推断。",
+    "category": "Vue 生态",
+    "tags": [
+      "Vue 3",
+      "Composable",
+      "Architecture"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-01",
+    "updatedAt": "2026-04-05",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/browser-cache",
+    "slug": "interview/browser-cache",
+    "title": "浏览器缓存面试题速答",
+    "description": "强缓存、协商缓存、Cache-Control 和 ETag 的标准答法，以及实际发布策略建议。",
+    "category": "面试题",
+    "tags": [
+      "Browser",
+      "Cache",
+      "HTTP"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-18",
+    "updatedAt": "2026-04-04",
+    "readingTime": "7 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/prototype-chain",
+    "slug": "interview/prototype-chain",
+    "title": "原型链与继承如何讲得清楚",
+    "description": "从 `__proto__`、`prototype` 到 class 语法糖，把原型链题目讲到业务可落地。",
+    "category": "面试题",
+    "tags": [
+      "JavaScript",
+      "Prototype",
+      "OOP"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-26",
+    "updatedAt": "2026-04-04",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/pinia-vs-vuex",
+    "slug": "interview/pinia-vs-vuex",
+    "title": "Pinia 和 Vuex 的面试对比",
+    "description": "为什么 Vue 3 时代更推荐 Pinia，以及如何说明它们的设计差异和迁移思路。",
+    "category": "面试题",
+    "tags": [
+      "Pinia",
+      "Vuex",
+      "State Management"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-20",
+    "updatedAt": "2026-04-03",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/security-xss-csrf",
+    "slug": "interview/security-xss-csrf",
+    "title": "XSS 与 CSRF 面试题整理",
+    "description": "明确两者的攻击方式、防御思路与前端需要承担的责任边界。",
+    "category": "面试题",
+    "tags": [
+      "Security",
+      "XSS",
+      "CSRF"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-12",
+    "updatedAt": "2026-04-03",
+    "readingTime": "6 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/css-bfc",
+    "slug": "interview/css-bfc",
+    "title": "CSS BFC 与布局问题",
+    "description": "面试中如何解释 BFC、解决浮动塌陷，以及它与现代布局的关系。",
+    "category": "面试题",
+    "tags": [
+      "CSS",
+      "BFC",
+      "Layout"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-16",
+    "updatedAt": "2026-04-02",
+    "readingTime": "5 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/vue-router-guards",
+    "slug": "interview/vue-router-guards",
+    "title": "Vue Router 守卫题怎么回答",
+    "description": "从导航流程、全局守卫、组件守卫到权限控制，把 Router 常考点串成一套答案。",
+    "category": "面试题",
+    "tags": [
+      "Vue Router",
+      "Auth",
+      "Navigation"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-22",
+    "updatedAt": "2026-04-02",
+    "readingTime": "5 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  },
+  {
+    "path": "/articles/interview/http-status",
+    "slug": "interview/http-status",
+    "title": "HTTP 状态码面试题整理",
+    "description": "重点整理 2xx、3xx、4xx、5xx 中前端面试最常被追问的状态码与场景。",
+    "category": "面试题",
+    "tags": [
+      "HTTP",
+      "Status Code",
+      "Network"
+    ],
+    "cover": "",
+    "publishAt": "2026-03-17",
+    "updatedAt": "2026-04-01",
+    "readingTime": "5 min",
+    "featured": false,
+    "draft": false,
+    "media": []
+  }
+]

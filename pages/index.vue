@@ -8,11 +8,13 @@ const route = useRoute()
 const keyword = ref(typeof route.query.query === 'string' ? route.query.query : '')
 const category = ref('')
 
-const [{ data: featured }, { data: recent }, { data: profile }] = await Promise.all([
-  useFetch<ArticleMeta[]>('/api/articles', { query: { featured: true, limit: 6 } }),
-  useFetch<ArticleMeta[]>('/api/articles', { query: { limit: 8 } }),
+const [{ data: articles }, { data: profile }] = await Promise.all([
+  useArticleIndex(),
   useFetch('/api/profile', { query: { locale: locale.value } }),
 ])
+
+const featured = computed(() => (articles.value || []).filter(article => article.featured).slice(0, 6))
+const recent = computed(() => (articles.value || []).slice(0, 8))
 
 useSeoMeta({
   title: t('siteName'),
@@ -91,7 +93,7 @@ watch([keyword, category], () => {
           </NuxtLink>
         </div>
         <div class="grid gap-4 md:grid-cols-2">
-          <DocCard v-for="article in featured || []" :key="article.path" :article="article" />
+          <DocCard v-for="article in featured" :key="article.path" :article="article" />
         </div>
       </div>
 
@@ -102,7 +104,7 @@ watch([keyword, category], () => {
         </div>
         <div class="mt-5 space-y-4">
           <NuxtLink
-            v-for="article in recent || []"
+            v-for="article in recent"
             :key="article.path"
             :to="localePath(article.path)"
             class="block rounded-2xl border border-slate-100 px-4 py-4 hover:bg-slate-50"

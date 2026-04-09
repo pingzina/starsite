@@ -86,3 +86,56 @@ public/media/              图片和媒体资源
 Agent 协作规则见：
 
 - [AGENT_RULES.md](./AGENT_RULES.md)
+
+## GitHub Pages 部署
+
+当前仓库已经配置好自动部署工作流：
+
+- `.github/workflows/deploy.yml`
+
+推送到 `main` 分支后，GitHub Actions 会自动执行：
+
+1. 安装依赖
+2. 生成静态站点
+3. 发布到 GitHub Pages
+
+### 你需要在 GitHub 上确认的设置
+
+进入仓库页面：
+
+- `Settings > Pages`
+
+将 `Source` 设为：
+
+- `GitHub Actions`
+
+建议再检查：
+
+- `Settings > Actions > General > Workflow permissions`
+
+确保 `GITHUB_TOKEN` 至少允许工作流正常部署 Pages。
+
+### 预计访问地址
+
+```text
+https://pingzina.github.io/starsite/
+```
+
+### 常用发布命令
+
+首次提交：
+
+```bash
+git add .
+git commit -m "feat: initialize starsite"
+git branch -M main
+git push -u origin main
+```
+
+后续更新：
+
+```bash
+git add .
+git commit -m "feat: update content"
+git push
+```
